@@ -38,6 +38,29 @@ public class CacheConfiguration {
             cm.createCache(ma.yk.cro.crf.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(ma.yk.cro.crf.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(ma.yk.cro.crf.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Etude.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FormulaireTemplate.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FormulaireTemplate.class.getName() + ".composantTemplates", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.ComposantTemplate.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.ComposantTemplate.class.getName() + ".validationComposants", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.ComposantTemplate.class.getName() + ".sousComposants", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.TypeComposant.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.ValidationComposant.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.RegleValidation.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Requette.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Requette.class.getName() + ".commentaireRequettes", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.CommentaireRequette.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FichePatient.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FichePatient.class.getName() + ".formulairePatients", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FormulairePatient.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.FormulairePatient.class.getName() + ".composantValeurs", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.ComposantValeur.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Centre.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Ville.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Ville.class.getName() + ".regions", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.Region.class.getName() + ".sousRegions", jcacheConfiguration);
+            cm.createCache(ma.yk.cro.crf.domain.SousRegion.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
